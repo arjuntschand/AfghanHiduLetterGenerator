@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h2>Aghan Hindu Letter Generator</h2>
+
+<label for="fullName">Full Name:</label><br>
+<input type="text" id="fullName" name="fullName" value=""><br>
+
+<label for="birthDate">Date of Birth:</label><br>
+<input type="text" id="birthDate" name="birthDate" value=""><br>
+
+<label for="emailAddress">Email Address:</label><br>
+<input type="text" id="emailAddress" name="emailAddress" value=""><br>
+
+<label for="phoneNumber">Phone Number:</label><br>
+<input type="text" id="phoneNumber" name="phoneNumber" value=""><br>
+
+<br>
+
+<button onclick="myFunction()">Generate Letter</button>
+
+
+<br>
+<br>
+
+<textarea rows='10' cols='80' id='textArea' ></textarea>
+
+<br>
+<br>
+
+<script>
+function myFunction() {
+  document.getElementById("textArea").value = "STATEMENT OF THREAT" + "\r\n" +
+  "Name: " + fullName.value + "\r\n" +
+  "DOB: " + birthDate.value + "\r\n" +
+  "eMail: " + emailAddress.value + "\r\n" +
+  "Mobile: " + phoneNumber.value;
+}
+</script>
+
+
+
+<input value='Download' type='button' id='dwn-btn' />
+
+
+
+<script type='text/javascript'>
+
+    
+document.getElementById("dwn-btn").addEventListener("click", function(){
+    // Generate download of hello.txt file with some content
+    var text = document.getElementById("textArea").value;
+    var filename = "hello.txt";
+    
+    download(filename, text);
+}, false);
+
+    function download(filename, text) {
+
+
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+        }
+
+// Start file download.
+
+    function doDL(s){
+        function dataUrl(data) {return "data:application/pdf," + escape(data);}
+        window.open(dataUrl(s));
+    }
+</script>
+</body>
+</html>
