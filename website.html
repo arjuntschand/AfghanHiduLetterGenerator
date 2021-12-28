@@ -32,11 +32,12 @@
 
 <script>
 function myFunction() {
-  document.getElementById("textArea").value = "STATEMENT OF THREAT" + "\r\n" +
+  document.getElementById("textArea").value = "STATEMENT OF THREAT" + "\r\n\r\n" +
   "Name: " + fullName.value + "\r\n" +
   "DOB: " + birthDate.value + "\r\n" +
   "eMail: " + emailAddress.value + "\r\n" +
-  "Mobile: " + phoneNumber.value;
+  "Mobile: " + phoneNumber.value + "\r\n\r\n" +
+  ;
 }
 </script>
 
@@ -72,12 +73,6 @@ document.getElementById("dwn-btn").addEventListener("click", function(){
         document.body.removeChild(element);
         }
 
-// Start file download.
-
-    function doDL(s){
-        function dataUrl(data) {return "data:application/pdf," + escape(data);}
-        window.open(dataUrl(s));
-    }
 </script>
 </body>
 </html>
