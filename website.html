@@ -6,16 +6,34 @@
 <h2>Aghan Hindu Letter Generator</h2>
 
 <label for="fullName">Full Name:</label><br>
-<input type="text" id="fullName" name="fullName" value=""><br>
+<input type="text" id="fullName" name="fullName" value="" required><br>
 
 <label for="birthDate">Date of Birth:</label><br>
-<input type="text" id="birthDate" name="birthDate" value=""><br>
+<input type="date" id="birthDate" name="birthDate" value="" required><br>
 
 <label for="emailAddress">Email Address:</label><br>
-<input type="text" id="emailAddress" name="emailAddress" value=""><br>
+<input type="email" id="emailAddress" name="emailAddress" value="" required><br>
 
 <label for="phoneNumber">Phone Number:</label><br>
-<input type="text" id="phoneNumber" name="phoneNumber" value=""><br>
+<input type="text" id="phoneNumber" name="phoneNumber" value="" required><br>
+
+<label for="locationAfghanistan">Location in Afghanistan:</label><br>
+<input type="text" id="locationAfghanistan" name="locationAfghanistan" value="" required><br>
+
+<label for="occupationAfghanistan">Occupation in Afghanistan:</label><br>
+<input type="text" id="occupationAfghanistan" name="occuoccupationAfghanistanpation" value="" required><br>
+
+<label for="yearMoved">Year Moved to India:</label><br>
+<input type="number" id="yearMoved" name="yearMoved" value="1950" required><br>
+
+<label for="locationIndia">Location in India:</label><br>
+<input type="text" id="locationIndia" name="locationIndia" value="" required><br>
+
+<label for="occupationIndia">Occupation in India:</label><br>
+<input type="text" id="occupationIndia" name="occupationIndia" value="" required><br>
+
+<label for="income">Income in India (numerical value of dollars per month):</label><br>
+<input type="number" id="income" name="income" value="30" required><br>
 
 <br>
 
@@ -25,7 +43,7 @@
 <br>
 <br>
 
-<textarea rows='10' cols='80' id='textArea' ></textarea>
+<textarea rows='30' cols='140' id='textArea' ></textarea>
 
 <br>
 <br>
@@ -37,7 +55,59 @@ function myFunction() {
   "DOB: " + birthDate.value + "\r\n" +
   "eMail: " + emailAddress.value + "\r\n" +
   "Mobile: " + phoneNumber.value + "\r\n\r\n" +
-  ;
+  "Hello, my name is " + fullName.value + ". My family and I lived in " + locationAfghanistan.value + ", Afghanistan. " + 
+  locationAfghanistan.value + " is a very nice area of Afghanistan. We belong to the Hindu Community in a majority Moslem country. " +
+  "Our lives were normal and I was a " + occupationAfghanistan.value + ". I was very succesful in what I was doing and had become very " +
+  "experienced in this field." + "\r\n\r\n" +
+  "Everything changed after the Islamic Mujahidin came to power in 1992. They made life hell for the " +
+  "Afghan Hindu " + occupationAfghanistan.value + "s. They simply could not appreciate the know-how involved in " +
+  "working in this field. They started to follow me after I left the field and stopped me " +
+  "with gun point and demanded money. If I did not give them money, they would threaten me with the " +
+  "charge of blasphemy which would result in death by stoning. They stopped me three time at gun point " +
+  "and literally took all my capital and whatever I had. After they took whatever I had, they stopped me " +
+  "again and demanded more money; I told them I had no more money left to give them. Then they " +
+  "suggested that I convert to Islam. I had to get out of the situation and told them that if I convert to " +
+  "Islam, the other " + occupationAfghanistan.value + "s would not work with me. I told them when I make more money I " +
+  "will give it to them. I bought some time. The Islamic Mujahidin mutilated the body an Afghan Hindu boy in our community " +
+  "who refused to convert to Islam." + "\r\n\r\n" +
+
+  "My family and I made the most difficult decision of our lives and moved to India in " + yearMoved.value + ". We went " +
+  "through Pakistan and then India. It was heartbreaking and still hoped to return back to our country " +
+  "Afghanistan. We hoped that the Mujahidin Government would be terminated. This did not happen and " +
+  "instead the Mujahidin were toppled by another dreaded regime, the Taliban. Taliban were more brutal " +
+  "than the Islamic Mujahidin. Again we did not lose hope and were waiting for an opportune time to " +
+  "return back to our beloved Afghanistan. The Allied Forces toppled the Taliban in 2001 and the control of " +
+  "the government fell to the remnants of the Islamic Mujahidin, the Northern Alliance. While in " + locationIndia.value + ", the " +
+  "news was that the warlords in Afghanistan were usurping properties belonging to the Afghan Hindus " +
+  "and Sikhs. Some Islamic Terrorists massacred the Hindus and Sikhs leadership in 2018 and again in 2020, " +
+  "the terrorists killed close to 50 Sikhs in one of the Sikh temples of Kabul. We decided not to move back " +
+  "to Afghanistan until things came under control. However the matter was getting worse by the day. It " +
+  "was dashing the hope of our going back. In August of 2021, the Taliban came to Afghanistan by force " +
+  "and totally dashed our hope of ever returning back to Afghanistan. The Hindus and Sikhs have been " +
+  "summed up by Taliban and have been ordered not to dare out." + "\r\n\r\n" +
+
+  "In India we have religious freedom and deal with the United Nations High Commissioner for Refugees " +
+  "(UNHCR) frequently. UNHCR is inundated with too many refugees. However we find it very difficult to " +
+  "fit in. When we speak Hindi, we have the Afghan accent which is recognizable, the weather is very hot " +
+  "and we are used to the cold weather of Afghanistan. The food is very hot. It is very difficult to adjust. " +
+  "After living in India for so long, we have realized that most of our successful community members had " +
+  "migrated to North America and Europe. My family and I failed to develop the business contacts we had " +
+  "in Afghanistan. We simply did not have the social net to help us live a normal life. I work for a business " +
+  "in " + locationIndia.value + ", India and am one of the top producers; my income is $" + income.value + " per month. If I had my " +
+  "community support, I could have started my own business and generated results. I find it very difficult to " +
+  "navigate the Indian bureaucracy and trust the Chartered Accounts (CA)’s without proper references. I " +
+  "need to live in North America or Europe where I would have my community support and have the vetted " +
+  "business resources to succeed. In the bottom of my heart I consider myself a very good business person " +
+  "and expert of the market which is universal all over the world. " + "\r\n\r\n" +
+  
+  "I would be very grateful for a chance to move to the west and prove my capabilities and generate results. " +
+  "\r\n\r\n\r\n\r\n" +
+  
+  "Very sincerely yours,"+ "\r\n\r\n\r\n\r\n" +
+
+  fullName.value;
+
+
 }
 </script>
 
@@ -53,7 +123,7 @@ function myFunction() {
 document.getElementById("dwn-btn").addEventListener("click", function(){
     // Generate download of hello.txt file with some content
     var text = document.getElementById("textArea").value;
-    var filename = "hello.txt";
+    var filename = fullName.value + "_ThreatLetter.txt";
     
     download(filename, text);
 }, false);
